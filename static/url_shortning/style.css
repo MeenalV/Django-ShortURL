@@ -1,0 +1,25 @@
+/*body {
+	background-image : url("1.png");
+	background-repeat : no-repeat;
+	background-size: cover
+	background-color : 'RED';
+}
+*/
+div{
+		position: absolute;
+		top: 35%;
+		bottom: 65%;
+		text-align: center;
+		align-content: center;
+		width: 100%;
+		font-size: 1.7em;
+		font-family: 'Encode Sans Condensed', sans-serif;
+	}
+	form {
+		font-size: 1.7em;
+		font-family: 'Encode Sans Condensed', sans-serif;
+	}
+	body{
+		color:  'RED'
+		background: #6BCAE2;
+	}

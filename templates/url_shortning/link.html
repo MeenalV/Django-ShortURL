@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>linked here</title>
+</head>
+<body>
+{% if retrieved_data %}
+click on the Shorten URL to redirect to target URL : <a href = "http://{{retrieved_data.targetURL}}" target = "_blank">{{ retrieved_data.shortenURL }}</a><br></p>
+{%else %}
+Nothing
+{%endif%}
+</body>
+</html>

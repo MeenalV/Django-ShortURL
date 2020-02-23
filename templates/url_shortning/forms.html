@@ -1,0 +1,48 @@
+
+<html>
+<head>
+	<style type = 'text/css'>
+		div{
+		position: absolute;
+		top: 35%;
+		bottom: 65%;
+		text-align: center;
+		align-content: center;
+		width: 100%;
+		font-size: 1.7em;
+		font-family: 'Encode Sans Condensed', sans-serif;
+	}
+	form {
+		font-size: 1.7em;
+		font-family: 'Encode Sans Condensed', sans-serif;
+	}
+	body{
+		/*color:  'RED'*/
+		background-image: url("static/images/1.jpg") ;
+	}
+</style>
+	<title>forms</title>
+</head>
+
+	
+<body bgcolor= #ffd24d>	
+	<div class = 'container' align = 'center'>
+	<form method="post">  	
+		{% csrf_token %} 	
+		target URL :  {{ form.targetURL }}
+		<button type="submit"> Submit</button>
+	</form>
+
+	{% if data %}
+
+		<b>click on the Shorten URL to redirect to target URL :<b> 
+		<a href = "//{{shortURL}}" target = "_blank">http:{{ data.shortenURL }}</a>
+		<br>
+
+	{%else%}
+		<b>Paste a URL in the box above, and get your Shortened URL :)<b>
+	{%endif%}
+</div>
+</body>
+
+</html>
