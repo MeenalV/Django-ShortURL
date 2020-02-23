@@ -2,7 +2,7 @@ Hello!!
 
 
 To run this project please firstly clone the project to your local repository
-Cloning the URL "https://github.com/MeenalV/Django-ShortURL.git"
+Cloning URL "https://github.com/MeenalV/Django-ShortURL.git"
 
 Now open the cmd and install
 1. redis
@@ -16,6 +16,7 @@ use the following commands to run it properly :
 4. python manage.py migrate
 5. python manage.py runserver
 
+Deployment File = Dockerfile
 
 After this your localhost should be up and running :)
 
