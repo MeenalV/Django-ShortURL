@@ -39,7 +39,7 @@ def url_shortner(request) :
 		shortURL 				= obj.shortenURL
 		obj.shortURLbase 		= base62
 		obj.dateCreated 		= datetime.now() + timedelta(hours = 5 , minutes = 30)
-		obj.dateExpired			= datetime.now() + timedelta(hours = 5 , minutes = 45)
+		obj.dateExpired			= datetime.now() + timedelta(hours = 5 , minutes = 30 , seconds = expTime)
 	
 		obj.save()
 
