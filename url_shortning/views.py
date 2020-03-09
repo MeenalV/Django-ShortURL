@@ -79,7 +79,7 @@ def get_targetURL(request , hashid)	:
 	ip_hit_count.setex(IPAddr , 60 , analysis.count_of_hits)
 	analysis.save()
 	
-	data = URLData().objects.get(id = keyid)
+	data = URLData.objects.get(id = keyid)
 
 	if not ip_hit_count.get(IPAddr) and int(ip_hit_count.get(IPAddr).decode("utf-8"))>= 100 :
 		return HttpResponse("<H1>The user is temporarily blocked</H1>")
